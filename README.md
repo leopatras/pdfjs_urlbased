@@ -13,11 +13,12 @@ Running in GDC
   FGLSERVER=<yourgdc> make run
 ```
 
-Running in GDC via GAS
+Run it in GDC via GAS
 ```
-  GDC=<yourgdcexecutable> make webrun
+  make gdcwebrun
 ```
-This assumes FGLASDIR is set and the GAS/GDC/fglrun are on the same machine
+This assumes FGLASDIR is set and pointing to a valid GAS,
+and the GAS/GDC/fglrun are on the same machine and GDC must be up and running.
 
 Just run it in GBC
 ```

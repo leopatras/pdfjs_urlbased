@@ -41,8 +41,10 @@ fglwebrun:
 	git clone https://github.com/FourjsGenero/tool_fglwebrun.git fglwebrun
 
 webrun: all fglwebrun download_and_patch
-	#if [ -z $(GDC) ]; then echo "GDC executable not set"; exit 1; fi
 	fglwebrun/fglwebrun pdfjs
+
+gdcwebrun: all fglwebrun download_and_patch
+	GDC=1 fglwebrun/fglwebrun pdfjs
 
 clean:
 	rm -f *.42?
