@@ -29,8 +29,8 @@ MAIN
       CALL displayPDF("hello.pdf")
     ON ACTION cancel
       EXIT MENU
-    ON ACTION radstation ATTRIBUTE(TEXT = "Show radstation.pdf")
-      CALL displayPDF("radstation.pdf")
+    ON ACTION sample ATTRIBUTE(TEXT = "Show sample.pdf")
+      CALL displayPDF("sample.pdf")
     ON ACTION hello ATTRIBUTE(TEXT = "Show hello.pdf")
       CALL displayPDF("hello.pdf")
     ON ACTION showcreator ATTRIBUTE(TEXT = "Retrieve creator")
